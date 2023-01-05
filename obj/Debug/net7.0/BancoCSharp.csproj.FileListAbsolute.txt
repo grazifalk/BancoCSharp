@@ -1,0 +1,15 @@
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\bin\Debug\net7.0\BancoCSharp.exe
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\bin\Debug\net7.0\BancoCSharp.deps.json
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\bin\Debug\net7.0\BancoCSharp.runtimeconfig.json
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\bin\Debug\net7.0\BancoCSharp.dll
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\bin\Debug\net7.0\BancoCSharp.pdb
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.csproj.AssemblyReference.cache
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.AssemblyInfoInputs.cache
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.AssemblyInfo.cs
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.csproj.CoreCompileInputs.cache
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.dll
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\refint\BancoCSharp.dll
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.pdb
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\BancoCSharp.genruntimeconfig.cache
+D:\SERRATEC\Projetos Pessoais Grazi\CSharp\BancoCSharp\obj\Debug\net7.0\ref\BancoCSharp.dll
