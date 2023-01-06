@@ -27,13 +27,23 @@ var titular02 = new Titular(
     Numero = 120
 });
 
-var conta01 = new ContaCorrente(titular01, 100.0);
+var conta01 = new ContaCorrente(titular01, 100.0, 500.0);
 
 var conta02 = new ContaInvestimento(titular02);
 
 var conta03 = new ContaPoupanca(titular02);
 
 conta01.Depositar(50.0);
+
+try
+{
+    conta01.Sacar(50.0);
+}
+catch (System.Exception e)
+{
+    Console.WriteLine(e.Message);
+}
+
 
 conta02.Depositar(500.0);
 conta02.Sacar(100.0);

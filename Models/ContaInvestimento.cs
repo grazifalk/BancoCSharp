@@ -7,7 +7,7 @@ namespace BancoCSharp.Models
         {
         }
 
-        public ContaInvestimento(Titular titular, double saldoAbertura) : base(titular, saldoAbertura)
+        public ContaInvestimento(Titular titular, double saldoAbertura, double limiteEspecial) : base(titular, saldoAbertura, limiteEspecial)
         {
         }
 
@@ -27,6 +27,8 @@ namespace BancoCSharp.Models
 
             Console.WriteLine();
             Console.WriteLine("Saldo atual: R$ " + Saldo);
+            Console.WriteLine();
+            Console.WriteLine("Limite especial: R$ " + LimiteChequeEspecial);
             Console.WriteLine();
             Console.WriteLine("**************************************");
             Console.WriteLine("*********** Fim do Extrato ***********");

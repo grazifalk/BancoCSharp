@@ -12,6 +12,8 @@ namespace BancoCSharp.Models
 
         public DateTime DataAbertura { get; private set; }
 
+        public double LimiteChequeEspecial { get; private set; }
+
         protected List<Movimentacao> Movimentacoes { get; set; }
 
         protected readonly double VALOR_MINIMO = 10.0;
@@ -25,17 +27,19 @@ namespace BancoCSharp.Models
             Titular = titular;
             Saldo = 0;
             DataAbertura = DateTime.Now;
-             Movimentacoes = new List<Movimentacao>()
+            LimiteChequeEspecial = 500;
+            Movimentacoes = new List<Movimentacao>()
             {
                 new Movimentacao(TipoMovimentacao.ABERTURA_CONTA, Saldo)
             };
         }
 
-        public ContaBancaria(Titular titular, double saldoAbertura)
+        public ContaBancaria(Titular titular, double saldoAbertura, double limiteEspecial)
         {
             Titular = titular;
             Saldo = saldoAbertura;
             DataAbertura = DateTime.Now;
+            LimiteChequeEspecial = limiteEspecial;
             Movimentacoes = new List<Movimentacao>()
             {
                 new Movimentacao(TipoMovimentacao.ABERTURA_CONTA, saldoAbertura)
@@ -67,11 +71,18 @@ namespace BancoCSharp.Models
             }
             else if(valor > Saldo)
             {
-                throw new Exception("Saldo insuficiente para saque. O saldo atual é de R$ " + Saldo);
+                if((valor - Saldo) > LimiteChequeEspecial)
+                {
+                    throw new Exception("Saldo insuficiente para saque. O saldo atual com o limite especial é de: R$ " + (Saldo + LimiteChequeEspecial));
+                }
+                else {
+                    LimiteChequeEspecial += (Saldo - valor);
+                }
+                
             }
 
             Saldo -= valor;
-
+            
             Movimentacoes.Add(new Movimentacao(TipoMovimentacao.SAQUE, valor));
 
             return valor;
